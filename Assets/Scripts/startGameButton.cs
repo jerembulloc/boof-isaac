@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class startGameButton : MonoBehaviour
 {
-    public int buildIndex;
 
     public void StartGame()
     {
-        SceneManager.LoadScene(buildIndex);
+        SceneManager.LoadScene(0);
     }
 
 }

@@ -1681,7 +1681,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &1468441924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1732,7 +1732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dca9045668e4d644891af2b570aaf15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildIndex: 1
 --- !u!1 &1473599344
 GameObject:
   m_ObjectHideFlags: 0
