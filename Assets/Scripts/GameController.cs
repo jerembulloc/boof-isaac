@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameController : MonoBehaviour
 {
 	// with static these exist and are accessible pretty much everywhere
 	public static GameController instance;
+
+	// Create the reference to the on death prefab
+	public GameObject onDeath; 
 
 	private static int hp = 6;
 
@@ -42,6 +47,10 @@ public class GameController : MonoBehaviour
     {
         if (instance == null) {
 			instance = this;
+			DontDestroyOnLoad(gameObject);
+		}
+		else{
+			Destroy(gameObject);
 		}
     }
 
@@ -74,4 +83,9 @@ public class GameController : MonoBehaviour
 
 	// kill player?
 	// public static void kill(){}
+
+	// Reference to populate the death screen
+	public void ShowDeathPrefab() {
+		onDeath.gameObject.SetActive(true);
+	}
 }
