@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
 	// Create the reference to the on death prefab
 	public GameObject onDeath; 
 
-	private static int hp = 6;
+	private static int hp = 3;
 
 	private static int maxHP = 6;
 
