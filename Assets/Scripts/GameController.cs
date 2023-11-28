@@ -20,6 +20,9 @@ public class GameController : MonoBehaviour
 
 	private static float fireRate = 1.0f;
 
+	private static float bulletSize = 0.5f;
+
+	public static float BulletSize { get => bulletSize; set => bulletSize = value; }
 
 	// get and set functions
 	public static int HP { 

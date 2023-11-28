@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class BulletController : MonoBehaviour
 {
     public float lifeTime;
 
@@ -22,6 +22,15 @@ public class NewBehaviourScript : MonoBehaviour
     {
         yield return new WaitForSeconds(lifeTime);
         Destroy(gameObject);
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag == "Enemy")
+        {
+            col.gameObject.GetComponent<GreenEnemyController>().Death();
+            Destroy(gameObject);
+        }
     }
 
 }
