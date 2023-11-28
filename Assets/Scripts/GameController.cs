@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Dynamic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+
 
 public class GameController : MonoBehaviour
 {
 	// with static these exist and are accessible pretty much everywhere
 	public static GameController instance;
-
-	// Create the reference to the on death prefab
-	public GameObject onDeath; 
 
 	private static int hp = 3;
 
@@ -52,9 +51,6 @@ public class GameController : MonoBehaviour
 			instance = this;
 			DontDestroyOnLoad(gameObject);
 		}
-		else{
-			Destroy(gameObject);
-		}
     }
 
     // Update is called once per frame
@@ -71,6 +67,8 @@ public class GameController : MonoBehaviour
 			HealPlayer();
 		}*/
 		// --------------------------------------------------
+
+		kill();
     }
 
 	// To damage the player call GameController.DamagePlayer(); from anywhere.
@@ -83,12 +81,14 @@ public class GameController : MonoBehaviour
 		hp += 1;
 	}
 
-
-	// kill player?
-	// public static void kill(){}
-
-	// Reference to populate the death screen
-	public void ShowDeathPrefab() {
-		onDeath.gameObject.SetActive(true);
+	// On death 
+	public static void kill(){
+		if (hp == 0)
+		{
+			hp = 10;
+			SceneManager.LoadScene(1);
+		}
 	}
+
+
 }

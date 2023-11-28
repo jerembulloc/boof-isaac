@@ -5,16 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class OnDeathScene : MonoBehaviour
 {
-    private int retryScene;
-    public void LoadMenu()
+    public void Start()
     {
-        SceneManager.LoadScene("MainMenu");
+        Scene current = SceneManager.GetSceneByBuildIndex(1);
+        SceneManager.SetActiveScene(current);
     }
 
-    public void LoadActive()
+    public void LoadMenu()
     {
-        retryScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(retryScene);
+        SceneManager.LoadScene(0);
+    }
+
+    public void LoadRetry()
+    {
+        SceneManager.LoadScene(2);
     }
 }
 
