@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6ea628930f349cc41805900a3a721338
+guid: c8a9862543808cd4faa850a498c11d70
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Vintage Warehouse
+  - Retro Gaming
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
