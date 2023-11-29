@@ -68,7 +68,7 @@ public class GameController : MonoBehaviour
 		}*/
 		// --------------------------------------------------
 
-		kill();
+		killPlayer();
     }
 
 	// To damage the player call GameController.DamagePlayer(); from anywhere.
@@ -82,7 +82,7 @@ public class GameController : MonoBehaviour
 	}
 
 	// On death 
-	public static void kill(){
+	public static void killPlayer(){
 		if (hp == 0)
 		{
 			hp = 10;
