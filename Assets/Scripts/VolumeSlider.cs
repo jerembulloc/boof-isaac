@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class VolumeSlider : MonoBehaviour
 {
     public TextMeshProUGUI numberText;
-    private Slider slider;
+    public static Slider slider;
 
     void Start()
     {
@@ -18,5 +18,7 @@ public class VolumeSlider : MonoBehaviour
     public void setNumberText(float value)
     {
         numberText.text = value.ToString();
+        AudioListener.volume = value / 100;
     }
+
 }
