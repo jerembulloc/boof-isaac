@@ -24,22 +24,26 @@ public class GameController : MonoBehaviour
 	public static float BulletSize { get => bulletSize; set => bulletSize = value; }
 
 	// get and set functions
-	public static int HP { 
+	public static int HP 
+	{ 
 		get => hp; 
 		set => hp = value; 
 	}
 
-	public static int MaxHP { 
+	public static int MaxHP 
+	{ 
 		get => maxHP; 
 		set => maxHP = value; 
 	}
 
-	public static float MoveSpeed { 
+	public static float MoveSpeed 
+	{ 
 		get => moveSpeed; 
 		set => moveSpeed = value; 
 	}
 
-	public static float FireRate { 
+	public static float FireRate 
+	{ 
 		get => fireRate; 
 		set => fireRate = value; 
 	}
@@ -47,7 +51,8 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        if (instance == null) {
+        if (instance == null) 
+		{
 			instance = this;
 			DontDestroyOnLoad(gameObject);
 		}
@@ -73,8 +78,14 @@ public class GameController : MonoBehaviour
 
 	// To damage the player call GameController.DamagePlayer(); from anywhere.
 	// HealPlayer works the same way.
-	public static void DamagePlayer() {
-		hp =- 1;
+	public static void DamagePlayer(int damage) 
+	{
+		hp -= damage;
+
+		if(hp <= 0)
+        {
+			killPlayer();
+        }
 	}
 
 	public static void HealPlayer() {

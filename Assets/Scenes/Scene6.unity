@@ -172,8 +172,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 0
   range: 10
   speed: 3
+  attackRange: 1
+  bulletSpeed: 0
+  coolDown: 2
+  bulletPrefab: {fileID: 0}
 --- !u!61 &277212805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -620,8 +625,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 1
   range: 10
   speed: 0.75
+  attackRange: 5
+  bulletSpeed: 10
+  coolDown: 2
+  bulletPrefab: {fileID: 3605956224323379216, guid: 7f5893d9678b42e4e935a6cbbf6302ab, type: 3}
 --- !u!212 &441883812
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50668,8 +50678,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 1
   range: 10
   speed: 0.75
+  attackRange: 5
+  bulletSpeed: 10
+  coolDown: 2
+  bulletPrefab: {fileID: 3605956224323379216, guid: 7f5893d9678b42e4e935a6cbbf6302ab, type: 3}
 --- !u!212 &1064237282
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51001,8 +51016,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 0
   range: 12
   speed: 5
+  attackRange: 1
+  bulletSpeed: 0
+  coolDown: 0.75
+  bulletPrefab: {fileID: 0}
 --- !u!61 &1099055283
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51275,8 +51295,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 0
   range: 10
   speed: 3
+  attackRange: 1
+  bulletSpeed: 0
+  coolDown: 2
+  bulletPrefab: {fileID: 0}
 --- !u!61 &1129427355
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -37042,8 +37042,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 0
   range: 10
   speed: 3
+  attackRange: 1
+  coolDown: 2
 --- !u!61 &612999228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37475,8 +37478,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 0
   range: 10
   speed: 3
+  attackRange: 1
+  coolDown: 2
 --- !u!61 &928318443
 BoxCollider2D:
   m_ObjectHideFlags: 0

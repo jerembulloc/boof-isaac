@@ -379,8 +379,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 1
   range: 10
   speed: 0.75
+  attackRange: 5
+  bulletSpeed: 10
+  coolDown: 2
+  bulletPrefab: {fileID: 3605956224323379216, guid: 7f5893d9678b42e4e935a6cbbf6302ab, type: 3}
 --- !u!212 &310164762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38573,8 +38578,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 1
   range: 10
   speed: 0.75
+  attackRange: 5
+  bulletSpeed: 10
+  coolDown: 2
+  bulletPrefab: {fileID: 3605956224323379216, guid: 7f5893d9678b42e4e935a6cbbf6302ab, type: 3}
 --- !u!212 &870405366
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39299,8 +39309,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currState: 0
+  enemyType: 1
   range: 10
   speed: 0.75
+  attackRange: 5
+  bulletSpeed: 10
+  coolDown: 2
+  bulletPrefab: {fileID: 3605956224323379216, guid: 7f5893d9678b42e4e935a6cbbf6302ab, type: 3}
 --- !u!212 &1545519677
 SpriteRenderer:
   m_ObjectHideFlags: 0

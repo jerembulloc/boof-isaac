@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 827588455
-  m_SortingLayer: 2
+  m_SortingLayerID: 1071063375
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 663813925, guid: 2296d0492c0b2a94994f9eecb8434e2a, type: 3}
   m_Color: {r: 0, g: 1, b: 0.9910369, a: 1}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 2
+  isEnemyBullet: 0
 --- !u!61 &6164777835542957916
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,5 +143,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
