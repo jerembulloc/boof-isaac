@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpeedBuff : MonoBehaviour
+public class FireSpeedBoost : MonoBehaviour
 {
-    public float amount;
+    public float fireDelayM;
+    public float bulletSpeedM;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,7 +15,8 @@ public class SpeedBuff : MonoBehaviour
 
             if (playerController != null)
             {
-                playerController.moveSpeed *= amount;
+                playerController.fireDelay *= fireDelayM;
+                playerController.bulletSpeed *= bulletSpeedM;
             }
 
             gameObject.SetActive(false);
