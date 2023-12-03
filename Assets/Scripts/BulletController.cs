@@ -52,17 +52,31 @@ public class BulletController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag == "Enemy" && !isEnemyBullet )
+        if(col.tag == "Enemy" && !isEnemyBullet)
         {
-            col.gameObject.GetComponent<EnemyController>().Death();
-            Destroy(gameObject);
-        }
+            col.gameObject.GetComponent<EnemyController>().TakeDamage(1);
 
-        if(col.tag == "Player" && isEnemyBullet)
+            Destroy(gameObject);
+            //enemies take damage
+
+        } 
+
+        if (col.tag == "Player" && isEnemyBullet)
         {
             GameController.DamagePlayer(1);
             Destroy(gameObject);
         }
     }
+
+   /* private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if(collision.gameObject.TryGetComponent<EnemyController>(out EnemyController enemyComponent))
+        {
+            enemyComponent.TakeDamage(1);
+        }
+
+        Destroy(gameObject); 
+    } */
 
 }

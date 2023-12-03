@@ -37004,8 +37004,8 @@ GameObject:
   - component: {fileID: 612999226}
   - component: {fileID: 612999231}
   - component: {fileID: 612999230}
-  - component: {fileID: 612999229}
   - component: {fileID: 612999228}
+  - component: {fileID: 612999229}
   - component: {fileID: 612999227}
   m_Layer: 0
   m_Name: Enemy1 (1)
@@ -37046,7 +37046,11 @@ MonoBehaviour:
   range: 10
   speed: 3
   attackRange: 1
+  bulletSpeed: 0
   coolDown: 2
+  bulletPrefab: {fileID: 0}
+  enemyHealth: 0
+  maxEnemyHealth: 2
 --- !u!61 &612999228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37482,7 +37486,11 @@ MonoBehaviour:
   range: 10
   speed: 3
   attackRange: 1
+  bulletSpeed: 0
   coolDown: 2
+  bulletPrefab: {fileID: 0}
+  enemyHealth: 0
+  maxEnemyHealth: 2
 --- !u!61 &928318443
 BoxCollider2D:
   m_ObjectHideFlags: 0

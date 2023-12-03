@@ -38496,6 +38496,8 @@ MonoBehaviour:
   bulletSpeed: 0
   coolDown: 2
   bulletPrefab: {fileID: 0}
+  enemyHealth: 0
+  maxEnemyHealth: 2
 --- !u!61 &1360734573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38744,6 +38746,8 @@ MonoBehaviour:
   bulletSpeed: 0
   coolDown: 2
   bulletPrefab: {fileID: 0}
+  enemyHealth: 0
+  maxEnemyHealth: 2
 --- !u!61 &1542097676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39172,6 +39176,8 @@ MonoBehaviour:
   bulletSpeed: 10
   coolDown: 2
   bulletPrefab: {fileID: 3605956224323379216, guid: 7f5893d9678b42e4e935a6cbbf6302ab, type: 3}
+  enemyHealth: 0
+  maxEnemyHealth: 3
 --- !u!212 &1716932216
 SpriteRenderer:
   m_ObjectHideFlags: 0

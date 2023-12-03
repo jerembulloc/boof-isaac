@@ -49,12 +49,17 @@ public class EnemyController : MonoBehaviour
 
     private Vector3 randomDir;
 
+    [SerializeField] float enemyHealth, maxEnemyHealth = 3f;
+
     
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+
+        enemyHealth = maxEnemyHealth;
+
     }
 
     // Update is called once per frame
@@ -159,6 +164,17 @@ public class EnemyController : MonoBehaviour
         coolDownAttack = false;
     }
 
+    
+    public void TakeDamage(float damageAmount)
+    {
+        enemyHealth -= damageAmount;
+
+        if(enemyHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    
     public void Death()
     {
         Destroy(gameObject);
