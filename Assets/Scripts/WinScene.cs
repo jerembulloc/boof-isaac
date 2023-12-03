@@ -8,6 +8,12 @@ public class WinScene : MonoBehaviour
 {
     public void LoadMenu()
     {
+		// reset powerups
+		GameController.MoveSpeed = 6.0f;
+		GameController.FireRate = 0.5f;
+		GameController.BulletSize = 0.5f;
+		GameController.BulletSpeed = 7.5f;
+
         SceneManager.LoadScene(0);
     }
 
