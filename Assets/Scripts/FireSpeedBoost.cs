@@ -17,6 +17,14 @@ public class FireSpeedBoost : MonoBehaviour
             {
                 playerController.fireDelay *= fireDelayM;
                 playerController.bulletSpeed *= bulletSpeedM;
+
+
+				// needed for powerups to carry over
+				float currentFireRate = GameController.FireRate;
+				GameController.FireRate = currentFireRate * fireDelayM;
+
+				float currentBulletSpeed = GameController.BulletSpeed;
+				GameController.BulletSpeed = currentBulletSpeed * bulletSpeedM;
             }
 
             gameObject.SetActive(false);

@@ -15,13 +15,25 @@ public class GameController : MonoBehaviour
 
 	private static int maxHP = 6;
 
-	private static float moveSpeed = 1.0f;
+	private static float moveSpeed = 6.0f;
 
-	private static float fireRate = 1.0f;
+	private static float fireRate = 0.5f;
 
 	private static float bulletSize = 0.5f;
 
-	public static float BulletSize { get => bulletSize; set => bulletSize = value; }
+	private static float bulletSpeed = 7.5f;
+
+	public static float BulletSize 
+	{ 
+		get => bulletSize; 
+		set => bulletSize = value; 
+	}
+
+	public static float BulletSpeed
+	{
+		get => bulletSpeed;
+		set => bulletSpeed = value;
+	}
 
 	// get and set functions
 	public static int HP 
@@ -72,8 +84,6 @@ public class GameController : MonoBehaviour
 			HealPlayer();
 		}*/
 		// --------------------------------------------------
-
-		killPlayer();
     }
 
 	// To damage the player call GameController.DamagePlayer(); from anywhere.

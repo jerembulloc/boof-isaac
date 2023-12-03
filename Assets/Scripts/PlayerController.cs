@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+		// needed for powerups to carry over
+		bulletSpeed = GameController.BulletSpeed;
+		fireDelay = GameController.FireRate;
+		moveSpeed = GameController.MoveSpeed;
+
     }
 
     private void Update()

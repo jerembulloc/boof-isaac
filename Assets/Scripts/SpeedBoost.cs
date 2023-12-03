@@ -15,6 +15,10 @@ public class SpeedBuff : MonoBehaviour
             if (playerController != null)
             {
                 playerController.moveSpeed *= amount;
+
+				// needed for powerups to carry over
+				float currentMS = GameController.MoveSpeed;
+				GameController.MoveSpeed = currentMS * amount;
             }
 
             gameObject.SetActive(false);
