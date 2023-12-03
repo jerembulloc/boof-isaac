@@ -83599,10 +83599,10 @@ MonoBehaviour:
   currState: 0
   enemyType: 1
   range: 1000
-  speed: 1
+  speed: 1.25
   attackRange: 13
   bulletSpeed: 10
-  coolDown: 1
+  coolDown: 0.1
   bulletPrefab: {fileID: 3605956224323379216, guid: 7f5893d9678b42e4e935a6cbbf6302ab, type: 3}
   enemyHealth: 0
   maxEnemyHealth: 20
