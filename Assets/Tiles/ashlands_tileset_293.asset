@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ashlands_tileset_293
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -802839080, guid: 03e28612beddd0348bafdf51830a2b86, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.90200496, b: 0.9433962, a: 1}
   m_Transform:
     e00: 1
     e01: 0

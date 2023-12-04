@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
 	// with static these exist and are accessible pretty much everywhere
 	public static GameController instance;
 
-	private static int hp = 3;
+	private static int hp = 6;
 
 	private static int maxHP = 6;
 

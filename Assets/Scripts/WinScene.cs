@@ -8,7 +8,8 @@ public class WinScene : MonoBehaviour
 {
     public void LoadMenu()
     {
-		// reset powerups
+		// reset powerups and health state
+		GameController.HP = 6;
 		GameController.MoveSpeed = 6.0f;
 		GameController.FireRate = 0.5f;
 		GameController.BulletSize = 0.5f;
