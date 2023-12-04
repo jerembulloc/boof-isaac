@@ -36890,8 +36890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfabb28b27482364c9f2db491df1a92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireDelayM: 0.5
-  bulletSpeedM: 2
+  fireDelayM: 0.75
+  bulletSpeedM: 1.5
 --- !u!61 &467855537
 BoxCollider2D:
   m_ObjectHideFlags: 0
